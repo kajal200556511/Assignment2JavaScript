@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Smoothie Order Form</h1>
+    <form id="smoothieForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        
+        <label for="size">Size:</label>
+        <select id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br><br>
+        
+        <label>Ingredients:</label><br>
+        <input type="checkbox" id="banana" value="Banana">
+        <label for="banana">Banana ($1.50)</label><br>
+        
+        <input type="checkbox" id="strawberry" value="Strawberry">
+        <label for="strawberry">Strawberry ($2.00)</label><br>
+        
+        <input type="checkbox" id="blueberry" value="Blueberry">
+        <label for="blueberry">Blueberry ($1.75)</label><br>
+        
+        <input type="checkbox" id="spinach" value="Spinach">
+        <label for="spinach">Spinach ($1.25)</label><br>
+        
+        <input type="checkbox" id="kale" value="Kale">
+        <label for="kale">Kale ($1.50)</label><br><br>
+        
+        <button type="button" onclick="createSmoothie()">Order Smoothie</button>
+    </form>
+    <div id="smoothieOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
